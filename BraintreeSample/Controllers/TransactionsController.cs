@@ -42,7 +42,7 @@ namespace BraintreeSample.Controllers
         }
 
         [HttpPost]
-        public async Task<CreateTransactionResponse> CreateTransactionAsync(CreateTransactionRequest request)
+        public async Task<CreateTransactionResponse> CreateTransactionAsync([FromBody] CreateTransactionRequest request)
         {
             var transactionRequest = new TransactionRequest
             {

@@ -4,6 +4,6 @@
     {
         public decimal Amount { get; set; }
         public string PaymentMethodNonce { get; set; }
-        public string DeviceData { get; set; }
+        public string? DeviceData { get; set; }
     }
 }
